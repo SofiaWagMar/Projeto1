@@ -28,11 +28,9 @@ def define_posicoes(linha, coluna, orientacao, tam):
     
     return final
 
-# linha = int(input("qual a linha? "))
-# coluna = int(input("qual a coluna? "))
-# orientacao = input("qual a orientação? (horizontal ou vertical)\n ").lower().strip()
-# tamanho = int(input("qual o tamanho? "))
-
-# print(define_posicoes(linha, coluna, orientacao, tamanho))
-# # deve sair [[2, 4], [3, 4], [4, 4]]
-
+def preenche_frota(frota, navio, linha, coluna, orientacao, tamanho):
+    if navio not in frota:
+        frota[navio] = []
+    posicion = define_posicoes(linha, coluna, orientacao, tamanho)
+    frota[navio].append(posicion)
+    return frota
