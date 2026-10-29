@@ -34,6 +34,7 @@ def preenche_frota(frota, navio, linha, coluna, orientacao, tamanho):
     posicion = define_posicoes(linha, coluna, orientacao, tamanho)
     frota[navio].append(posicion)
     return frota
+<<<<<<< HEAD
 
 def faz_jogada(tabuleiro, linha, coluna):
     if tabuleiro[linha][coluna] == 1:
@@ -41,3 +42,5 @@ def faz_jogada(tabuleiro, linha, coluna):
     elif tabuleiro[linha][coluna] == 0:
         tabuleiro[linha][coluna] = '-'
     return tabuleiro
+=======
+>>>>>>> sofia
